@@ -38,5 +38,66 @@ nav{
     
 }
 
+.main-head{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem 15rem 1rem;
+    gap: clamp(2rem, 5vw, 5rem);
+}
 
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.left h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #FABE4C;
+}
+
+.left span{
+    color: #363958;
+}
+.left p{
+    color: #3E3E3E;
+    font-size: 1rem;
+}
+
+.buy-now-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 60px;
+    color: white;
+    background-color: #85A019;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now-btn img{
+    height: 25px;
+    width: 25px;;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: clamp(200px, 40vw, 450px);
+    height: auto;
+}
 
