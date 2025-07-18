@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
 }
 
 
-nav{
+nav {
     max-width: 1300px;
     padding: 2rem 1rem 0rem 1rem;
     display: flex;
@@ -18,27 +18,33 @@ nav{
     margin: 0 auto;
 }
 
-.links{
+.links {
     display: flex;
-    gap: clamp(1rem,5vw,2rem);
+    gap: clamp(1rem, 5vw, 2rem);
     align-items: center;
 }
-.logo{
+
+.logo {
     display: flex;
 }
+
 .logo img {
-  width: clamp(10rem, 18vw, 18.25rem);
+    width: clamp(10rem, 18vw, 18.25rem);
 }
 
-.links a{
+.links a {
     color: #3C3C3C;
     font-weight: 600;
-    font-size: clamp(0.8rem,1vw,1rem);
+    font-size: clamp(0.8rem, 1vw, 1rem);
     text-decoration: none;
-    
-}
 
-.main-head{
+}
+.three-line{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.main-head {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -47,7 +53,7 @@ nav{
     gap: clamp(2rem, 5vw, 5rem);
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,22 +61,23 @@ nav{
     gap: 2rem;
 }
 
-.left h1{
+.left h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
     font-size: 80px;
     color: #FABE4C;
 }
 
-.left span{
+.left span {
     color: #363958;
 }
-.left p{
+
+.left p {
     color: #3E3E3E;
     font-size: 1rem;
 }
 
-.buy-now-btn{
+.buy-now-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +93,7 @@ nav{
 
 .buy-now-btn img{
     height: 25px;
-    width: 25px;;
+    width: 25px;
 }
 
 .right {
@@ -100,4 +107,18 @@ nav{
     width: clamp(200px, 40vw, 450px);
     height: auto;
 }
+@media  (max-width: 576px) {
+    .links a{
+        display: none;
+    }
+    .main-head {
+        flex-direction: column;
+    }
 
+    .right{
+        padding-top: 5rem;
+    }
+    .three-line{
+        display: flex;
+    }
+}
