@@ -107,6 +107,92 @@ nav {
     width: clamp(200px, 40vw, 450px);
     height: auto;
 }
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1300px;
+    margin: auto;
+    padding: 16px;
+    justify-content: center;
+}
+
+.card{
+    flex: 1 1 400px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+.card .img-container {
+  aspect-ratio: 4 / 3;      
+  width: 100%;
+  overflow: hidden;             
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+.card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.price-buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.price{
+    color: #FABE4C;
+    font-size: clamp(1rem,5vw,2rem);
+    font-weight: 700;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    background-color: #85A019;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.buy img{
+    height: 25px;
+    width: 25px;
+}
+.category{
+    padding: 3rem 0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    max-width: 1250px;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #363958;
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #363958;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cloth-desc{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #3E3E3E;
+    padding-bottom: 10px;
+}
 @media  (max-width: 576px) {
     .links a{
         display: none;
@@ -120,5 +206,8 @@ nav {
     }
     .three-line{
         display: flex;
+    }
+    .category{
+        text-align: center;
     }
 }
